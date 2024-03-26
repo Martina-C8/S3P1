@@ -5,7 +5,7 @@
 
 function crazySum (num1, num2) {
     if (num1 === num2) {
-        return (num1 + num2)
+        return (num1 + num2) * 3 ; 
     } else 
     return num1 + num2
 }
@@ -88,7 +88,14 @@ console.log (`l'area di questo rettangolo è ${RisultatoArea}`)
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
-
+function codify(str) {
+    if (str.startsWith("code")) {
+      return str; 
+    } else {
+      return "code" + str;
+    }
+  }
+  
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 4
