@@ -103,7 +103,14 @@ function codify(str) {
  La funzione deve controllare che tale parametro sia un multiplo di 3 o di 7, e in tal caso tornare true; altrimenti deve tornare false.
  SUGGERIMENTO: operatore modulo
 */
-
+function  check3and7(num){
+     while (num>0){
+         num=num-3;
+         if (num==1 || num==7) {return true;}
+         num=num/7; 
+     }
+     return false;
+}
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 5
